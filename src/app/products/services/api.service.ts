@@ -13,7 +13,7 @@ export class ApiService {
  //to hold cart count
  cartItemCount=new BehaviorSubject(0)
 constructor(private http:HttpClient) { }
-BASE_URL = 'http://localhost:5000'
+BASE_URL = 'https://backend-for-amazone-clone-uqqa.onrender.com'
 
  
 //get all product
