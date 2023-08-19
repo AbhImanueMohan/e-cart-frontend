@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+button{
+    width: 100%;
+    background-color: rgba(7, 8, 15, 0.932);
+    
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    font-weight: 300;
+}
+button:hover{
+    background-color:rgba(7, 8, 15, 0.801) ;
+}
+#footer{
+    background-color: rgba(7, 8, 15, 0.966) ;
+    color: white;
+}
+footer{
+    background-color: rgba(7, 8, 15, 0.87) ;
+    color: white;
+}
+.aa { 
+    color: white;
+    
+}
+.aa:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.a1{
+    margin-left: 80px;
+    font-size: smaller;
+    padding: 20px;
+}
+
+.aa1 { 
+    color: white;
+    margin: 10px;
+    
+}
+.aa1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

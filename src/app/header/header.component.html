@@ -1,0 +1,115 @@
+ <!-- Navigation-->
+
+ <div id="navbar">
+ <nav class="navbar navbar-expand-lg navbar-light" id="navbar" >
+    <div class="container px-4 px-lg-5 ">
+        <a  class="navbar-brand " routerLink=""><h1><img width="75px" height="50px" src="https://nickiekrommingahill.com/wp-content/uploads/2020/05/white-amazon-logo-png-6.png" alt=""></h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<div class="d-flex w-75" >
+   
+            <div class="me-5 w-75 d-flex mb-3">
+               
+
+                <input  style="height: 30px; " type="text" (keyup)="search($event)"   placeholder="Search Your Product" class="form-control " >
+            </div>
+            </div>
+            
+            <form class="d-flex ">
+                
+
+                <h5 class="text-center me-3" style="color: white; font-size: 15px;">Hello, <span>ABHIMANUE</span>
+                    <div class="dropdown btn   btn-outline outline-light">
+                        <a style="text-decoration: none;" class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         <h5 style="color: white; font-size: 20px;"> Accounts and Lists</h5>
+                        </a>
+                     
+                        <ul class="dropdown-menu " ><br><br><br>
+                            <li><h6 style="font-weight: 600; font-size: medium;">Your Account </h6></li>
+                          <li><a class="dropdown-item" routerLink="products/wishlist">Your wishlist</a></li>
+                          <li><a class="dropdown-item" href="#">Your Prime Memership</a></li>
+                          <li><a class="dropdown-item" href="#">Your Prime Vedio</a></li>
+                          <li><a class="dropdown-item" href="#">Subscriptions & Memership</a></li>
+                          <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                        </ul>
+                      </div></h5>
+<!-- wishlist button -->
+
+                <button class="btn   btn-outline outline-light text-center mb-2 fw-bolder" type="submit" routerLink="products/wishlist" style="color: white; display: flex;">
+                    Return &&nbsp;&nbsp;Order
+                    
+                   
+                </button>
+
+                <!-- cart button -->
+                <button class="btn  ms-5 d-flex mb-2" type="submit" routerLink="products/cart" style="padding:15px;">
+                    <i style="font-size: xx-large; color: white;" class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="badge  text-warning ms-1 rounded-pill" >{{cartCount}} </span>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+<nav id="navbar1" class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"> </span>All
+      </button>
+      
+        <li routerLink="" class="navbars">Fresh</li>
+        <li routerLink="" class="navbars">Amazon miniTV</li>
+        <li routerLink="" class="navbars">Sell</li>
+        <li routerLink="" class="navbars">Amazon Pay</li>
+        <li routerLink="" class="navbars">Best Seller</li>
+        <li routerLink="" class="navbars">Buy Again</li>
+       
+        
+  
+    
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-start flex-grow-1 ps-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+         
+    
+    </div>
+  
+  </nav>
+</div>
+
+
+
+
+
+
+
+
+
+

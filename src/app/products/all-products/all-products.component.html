@@ -1,0 +1,67 @@
+<div >
+<div class="banner">
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner"id="carousel">
+          <div class="carousel-item active" >
+            <img height="400" src="https://dealgyan.com/wp-content/uploads/2021/06/Amazon-Upcoming-Sale-Date.png" class="d-block w-100"  alt="...">
+          </div>
+          <div class="carousel-item">
+            <img height="400" src="https://th.bing.com/th/id/R.642c5110acab2b80f6dc73e46831fdb4?rik=EV7p1g%2fVquIChA&riu=http%3a%2f%2fcdn.lookgadgets.com%2fwp-content%2fuploads%2f2019%2f10%2fAmazon-Black-Friday-Best-Deals.png&ehk=n73X%2b5LMoMIMlc332hPeitXjWi%2fKFdp4S9FibWRiXsM%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100"  alt="...">
+          </div>
+          <div class="carousel-item">
+            <img height="400" src="https://data1.ibtimes.co.in/en/full/633370/amazon-india-sale-offers.jpg" class="d-block w-100"  alt="...">
+          </div>
+          <div class="carousel-item">
+            <img height="400" src="https://shoppingandoffers.com/wp-content/uploads/2020/12/Amazon-KSA-Coupons-Promo-code-Offers.jpg" class="d-block w-100"  alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+     
+  
+    
+
+  <!-- Section-->
+  <section class="py-5 " id="section" >
+    <div class="container" >
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center align-items-center" >
+            <div class="col mb-5"  *ngFor=" let products of allProducts | filter:searchKey:'title'" style="height: 600px;" >
+                <div class="card border-4 shadow h-100 "  >
+                    <!-- Product image-->
+                    <img  class="card-img-top p-3" height="300" width="150" [src]="products.image"  alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4" >
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder" style="color: rgb(224, 141, 17);"> {{products.title}} </h5>
+                            <!-- Product price-->
+                           <span style="font-size: xx-large; font-weight: 800; color: green; margin-bottom: 200px; ">₹ {{products.price}}/-  </span> 
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent" style="z-index: 0;">
+                      <div class="text-center" style="text-align: center;"><a class="btn btn-warning mt-auto w-50 shadow" routerLink="view-product/{{products.id}}">View </a></div>
+                  </div>
+                   
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </section>
+    </div>
+  </div>
+        
+
+  
+       
+   
+        
+

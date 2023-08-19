@@ -1,0 +1,19 @@
+
+#navbar{
+    background-color: rgba(7, 8, 15, 0.932);
+  
+
+}
+#navbar1{
+    background-color: rgba(7, 8, 15, 0.87) ;
+
+    
+}
+.navbars{
+    display: flex;
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    font-family:sans-serif;
+    list-style: none;
+}

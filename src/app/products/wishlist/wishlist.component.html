@@ -1,0 +1,44 @@
+<!-- empty wishlist -->
+
+<div class="container" *ngIf="wishlistAdd.length==0">
+    <div class="row">
+        <div class="col text-center">
+            <!-- empty wishlist image -->
+            <img src="https://cdn.dribbble.com/users/1514097/screenshots/3550111/wishlist-icon.gif" alt="">
+            <h3>Your Wishlist is Empty...</h3>
+            <button class="btn btn-outline-dark mt-auto" routerLink="">Shop More</button>
+        </div>
+    </div>
+</div>
+
+<!-- wishlist with content -->
+
+<section class="py-5" style="display: flex; flex-direction: row;">
+    <div class="container" >
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5"  *ngFor="let wishlist of wishlistAdd">
+                <div class="card h-100 p-4">
+                    <!-- Product image-->
+                    <img class="card-img-top " width="200" height="200"  [src]="wishlist.image" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder"> {{wishlist.title}} </h5>
+                            <!-- Product price-->
+                            <span style="font-size: xx-large; font-weight: 600; color: green;"> $ {{wishlist.price}} </span>
+
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                           
+                <a (click)="wishlistDelete(wishlist.id)" class="btn btn-outline-dark mt-auto" >
+                    <i class="fa-solid fa-heart-circle-xmark fa-beat-fade text-danger"></i> </a>
+                    <a  class="btn btn-outline-dark mt-auto ms-5">
+                        <i class="fa-solid fa-cart-plus  fa-shake text-warning"></i> </a>
+                </div>
+                    </div>
+                </div>
+            </div>
